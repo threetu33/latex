@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{ctex}
+
+\begin{document}
+    \begin{tabular}{l c c c r}
+        姓名 & 语文 & 数学 & 英语 & 备注 \\
+        张三 & 86 & 66 & 99 & 优秀 \\
+        李四 & 98 & 99 & 88 & 非常优秀 \\
+        王五 & 66 & 12 & 38 & \\
+    \end{tabular}
+
+
+    \begin{tabular}{l | c | c | c | r}
+        姓名 & 语文 & 数学 & 英语 & 备注 \\
+        张三 & 86 & 66 & 99 & 优秀 \\
+        李四 & 98 & 99 & 88 & 非常优秀 \\
+        王五 & 66 & 12 & 38 & 补考 \\
+    \end{tabular}
+
+    \begin{tabular}{l || c | c | c | p{1.5cm}}
+        \hline \hline
+        姓名 & 语文 & 数学 & 英语 & 备注 \\
+        \hline
+        张三 & 86 & 66 & 99 & 优秀 \\
+        \hline
+        李四 & 98 & 99 & 88 & 非常优秀 \\
+        \hline
+        王五 & 66 & 12 & 38 & 补考 \\
+        \hline
+    \end{tabular}
+
+% texdoc booktab
+% texdoc longtab
+% texdoc tabu
+
+\end{document}

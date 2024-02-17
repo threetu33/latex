@@ -1,0 +1,85 @@
+\documentclass{ctexart}
+\usepackage{amsmath}
+
+\begin{document}
+    \[
+        \begin{matrix}
+            0 & 1 \\
+            1 & 0
+        \end{matrix}
+    \]
+    \[
+    \begin{pmatrix}
+        0 & 1 \\
+        1 & 0
+    \end{pmatrix}
+    \]
+    \[
+    \begin{bmatrix}
+        0 & 1 \\
+        1 & 0
+    \end{bmatrix}
+    \]
+    \[
+    \begin{Bmatrix}
+        0 & 1 \\
+        1 & 0
+    \end{Bmatrix}
+    \]
+    \[
+    \begin{vmatrix}
+        0 & 1 \\
+        1 & 0
+    \end{vmatrix}
+    \]
+    \[
+    \begin{Vmatrix}
+        0 & 1 \\
+        1 & 0
+    \end{Vmatrix}
+    \]
+
+
+    %常用省略号\dots,\vdots,\ddots
+    \[
+    A = \begin{pmatrix}
+        a_{11}^2 & a_{12}^2 & a_{13}^2 \\
+        0 & a_{22} & a_{23} \\
+        0 & 0 & a_{33}
+    \end{pmatrix}  
+    \]
+
+    \[
+        A=\begin{bmatrix}
+            a_{11} & \dots & a_{1n} \\
+             & \ddots & \vdots \\
+            0 & & a_{nn} 
+        \end{bmatrix}\]
+    
+    % 分块矩阵（嵌套矩阵）
+    \[
+        \begin{pmatrix}
+            \begin{matrix}
+                1&0\\0&1
+            \end{matrix} & \text{\Large 0} \\
+            \text{\Large 0} & \begin{matrix}
+                1&0\\0&-1
+            \end{matrix}
+        \end{pmatrix}\]
+
+    % 行内小矩阵（smallmatrix）环境
+    复数$z=(x,y)$ 也可以用矩阵
+    \begin{math}
+        \left(\begin{smallmatrix}
+            x & -y \\ y & x
+        \end{smallmatrix}\right)
+    \end{math}
+    
+    % 三角矩阵
+    \[\begin{pmatrix}
+        a_{11} & a_{12} & \dots & a_{1n} \\
+        & a_{22} & \dots & a_{2n} \\
+        & & \ddots & \vdots \\
+        \multicolumn{2}{c}{\raisebox{1.3ex}[0pt]{\Huge 0}} & & a_{nn}
+    \end{pmatrix}\]
+\end{document}

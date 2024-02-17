@@ -1,0 +1,50 @@
+\documentclass{ctexart}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+    % 使用gather和gather*环境（可以用\\换行）
+    % 带编号
+    \begin{gather}
+        a+b=b+a \\
+        ab = ba \notag \\ % \notag阻止编号
+        a+(b+c)=(a+b)+c
+    \end{gather}
+
+    % 不带编号
+    \begin{gather*}
+        3+5 = 5+3 = 8 \\
+        3 \times 5 = 5 \times 3
+    \end{gather*}
+
+    % align和align*环境（用&进行对齐）
+    % 带编号
+    \begin{align}
+        x & = t+\cos t + 1 \\
+        y & = 2 \sin t
+    \end{align}
+
+    % 不带编号
+    \begin{align*}
+        x & = t&+\cos t + 1 \\
+        y & = 2 &\sin t
+    \end{align*}
+
+    % split环境
+    \begin{equation}
+        \begin{split}
+            \cos 2x &= \cos^2 x -\sin^2 x \\
+            & = 2 \cos^2 x -1
+        \end{split}
+    \end{equation}
+
+    % cases环境
+    % 每行公式中使用&分割为两部分
+    % 通常表示值和后面的条件
+    \begin{equation}
+        D(x)=\begin{cases}
+            1,& \text{如果 } x \in \mathbb{Q}; \\
+            0,& \text{如果 } x \in \mathbb{R}\setminus\mathbb{Q}.
+        \end{cases}
+    \end{equation}
+\end{document}

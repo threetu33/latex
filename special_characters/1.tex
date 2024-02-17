@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage{ctex}
+
+\begin{document}
+    \section{空白符号}
+    % 英文中多个空格处理为1个空格，中文中空格被忽略
+    % 汉字与其他字符之间的间距会自动由XeLaTeX处理
+    % 禁止使用中文全角空格
+    The morning sun peeked through the curtains, 
+    casting a warm glow over the room. Birds chirped melodiously outside, 
+    heralding the start of a new day. 
+    The air was fresh and invigorating, 
+    filled with the promise of new opportunities and adventures.
+
+    晨光透过窗帘探进来，给房间投下了温暖的光芒。
+    外面的鸟儿欢快地鸣叫，预示着新一天的开始。
+    空气清新而令人振奋，充满了新机遇和冒险的承诺。
+
+    % 1em（当前字体中M的宽度）
+    a \quad b
+
+    % 2em
+    a \qquad b
+
+    % 0.5em
+    a \enspace b
+
+    % 空格
+    a\ b
+
+    % 硬空格
+    a~b
+
+    % 1pc=12pt=4.218mm
+    a \kern 1pc b
+    a \kern -1em b
+    a \hskip 1em b
+    a \hspace{35pt}b
+
+    % 弹性长度（充满整个空间）
+    a\hfill b
+
+
+    \section{\LaTeX 控制符}
+    \# \$ \% \{ \} \~{} \_{} \^{} \textbackslash \&
+    
+    
+    \section{\TeX 标志符号}
+    \S \P \dag \ddag \copyright \pounds
+
+
+    \section{引号}
+    \TeX{}  \LaTeX{}  \LaTeXe{}
+    
+
+    \section{引号}
+    `' '' ``hello''
+
+
+    \section{连字符}
+    - -- ---
+
+
+    \section{非英文字符}
+    \oe \OE \ae \AE \aa \AA \o \O \l \L \ss \SS !` ?`
+
+
+    \section{重音符号}
+    \`o \'o \^o \''o \~o \=o \.o \u{o} \v{o} \H{o} \r{o} \t{o} \b{o} \c{o} \d{o}
+
+\end{document}

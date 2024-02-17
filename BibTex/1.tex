@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{ctex}
+\usepackage{cite}
+\usepackage[number,sort&compress]{natbib}
+
+
+\begin{document}
+    % 参考文献在文中的引用
+    \section{REFERENCES}
+    \subsection{An overview of references}
+    We want to cite the paper \cite{ref1} \par
+    We want to cite the paper \cite{ref1,ref2,ref5} \par
+    We want to cite the paper \cite{ref1,ref2,ref3}
+    
+    % 参考文献的列举
+    \begin{thebibliography}{100}
+
+    \bibitem{ref1}Lv Y, Duan Y, Kang W, et al. Traffic flow prediction with big data: a deep learning approach[J]. IEEE Transactions on Intelligent Transportation Systems, 2014, 16(2): 865-873.
+    \bibitem{ref2}Wu Y, Tan H, Qin L, et al. A hybrid deep learning based traffic flow prediction method and its understanding[J]. Transportation Research Part C: Emerging Technologies, 2018, 90: 166-180.
+    \bibitem{ref3}Polson N G, Sokolov V O. Deep learning for short-term traffic flow prediction[J]. Transportation Research Part C: Emerging Technologies, 2017, 79: 1-17.
+    \bibitem{ref4}Yin H, Wong S C, Xu J, et al. Urban traffic flow prediction using a fuzzy-neural approach[J]. Transportation Research Part C: Emerging Technologies, 2002, 10(2): 85-98.
+    \bibitem{ref5}Fu R, Zhang Z, Li L. Using LSTM and GRU neural network methods for traffic flow prediction[C]//2016 31st Youth Academic Annual Conference of Chinese Association of Automation (YAC). IEEE, 2016: 324-328.
+    
+    \end{thebibliography}
+    
+
+    \section{REFERENCES}
+    \subsection{An overview of references}
+    We want to cite the paper \cite{2015Traffic}, \par
+    We want to cite the paper \cite{2017Traffic, 2019Big, 2019Deep}, \par
+    We want to cite the paper \cite{2017Traffic, Hong2014Deep}, \par
+
+
+    \bibliographystyle{ieeetr}
+    \bibliography{ref}  %% 在论文最末，\end{document}之前
+
+\end{document}

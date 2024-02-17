@@ -1,0 +1,62 @@
+\documentclass[10pt]{article}
+%设置normalsize的大小为10pt（一般只有10，11，12pt）
+\usepackage{ctex}
+
+\begin{document}
+    %字体设置（罗马字体，无衬线字体，打字机字体）
+    \textrm{Roman Family}
+    \textsf{Sans Serif Family}
+    \texttt{Typewriter Family}
+
+
+    %声明后续字体为罗马字体
+    \rmfamily Roman Family {\sffamily Sans Serif Family} {\ttfamily Typewriter Family}
+
+    \rmfamily who are you?
+    are you sure?
+
+    \sffamily who are you?
+    
+    are you sure?
+
+    %字体系列设置（粗细，宽度）
+    \textmd{Medium Series}
+    \textbf{Boldface Series}
+    {\mdseries Medium Series}
+    {\bfseries Boldface Series}
+
+    %字体形状（直立，斜体，伪斜体，小型大写）
+    \textup{Upright Shape}
+    \textit{Italic Shape}
+    \textsl{Slanted Shape}
+    % \textsc{Small Caps Shape}
+
+    {\upshape Upright Shape}
+    {\itshape Italic Shape}
+    {\slshape Slanted Shape}
+    % {\scshape Small Caps Shape}
+
+    % 中文字体
+    {\songti 宋体}
+    {\heiti 黑体}
+    {\fangsong 仿宋}
+    {\kaishu 楷书}
+
+    % 中文字体的\textbf{粗体}与\textit{斜体}
+
+    %字体大小
+    {\tiny             hello}\\
+    {\scriptsize       hello}\\
+    {\footnotesize     hello}\\
+    {\small            hello}\\
+    {\normalsize       hello}\\
+    {\large            hello}\\
+    {\Large            hello}\\
+    {\LARGE            hello}\\
+    {\huge             hello}\\
+    {\Huge             hello}\\
+
+    % 中文字号设置命令
+    \zihao{3} 你好！
+    % -3表示小三号
+\end{document}

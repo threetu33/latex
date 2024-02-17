@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[UTF8]{ctex}
+\usepackage{algorithm} % 排版算法
+\usepackage{algorithmic} % 排版算法
+
+\title{Algorithm}
+\author{NSJim Green}
+\date{October 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Algorithm 1}
+
+\begin{algorithm}
+\caption{CheckSum(A,x)} %算法标题
+\label{alg2} %标签
+\begin{algorithmic} %算法开始
+\STATE {\bf Input:} An array A and a value x  %也可以用\textbf{Input:}
+\STATE {\bf Output:} A bool value show if there is two elements in A whose sum is x
+\STATE A $\gets$ SORT(A)
+\STATE n $\gets$ length(n)
+\FOR{i $\gets$ 0 to n}
+    \IF{Binary-search(A,x-A[i],1,n)}
+    \STATE return true
+    \ENDIF
+\ENDFOR
+\STATE return false
+\end{algorithmic}
+\end{algorithm}
+
+\end{document}

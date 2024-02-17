@@ -1,0 +1,83 @@
+\documentclass[UTF8]{article}
+% 取自文章https://blog.csdn.net/NSJim/article/details/109066847?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522170683895116800185832519%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=170683895116800185832519&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-109066847-null-null.142^v99^pc_search_result_base7&utm_term=latex&spm=1018.2226.3001.4187
+\usepackage{ctex}
+
+% 使用indentfirst宏包
+\usepackage{indentfirst}
+% 设置首行缩进距离
+\setlength{\parindent}{2em}
+% 单段取消缩进 \noindent
+% 全局取消缩进 \setlength{\parindent}{0pt}
+% 单段进行缩进 \hspace*{2em}段落\\
+
+% 设置页面的环境,a4纸张大小，左右上下边距信息
+\usepackage[a4paper,left=10mm,right=10mm,top=15mm,bottom=15mm]{geometry}
+
+\title{这是一个\LaTeX{}语法的补充知识}
+\author{洪德垚}
+\date{\today}
+
+
+
+\iffalse
+中文支持 ： ctex
+latex数学公式支持 ： amsmath
+插入图片 ： graphicx
+算法排版 ： algorithm algorithmic
+插入代码块 ： listings
+\fi
+
+\iffalse
+换行 \\
+offset代表增加的行间距 \\[offset]
+换段 \par
+新页 \newpage
+\+字符 可以用转义字符使一些特殊字符强制显示
+\fi
+
+\iffalse
+推荐：
+{\songti 宋体}
+{\kaishu 楷书}
+{\fangsong 仿宋}
+{\heiti 黑体}
+
+{\bf 粗体}
+{\it 斜体}
+{\sl 斜体}
+\fi
+
+
+\begin{document}
+    \maketitle   %添加这一行才能显示标题信息
+
+    % 生成目录设置
+    \renewcommand{\contentsname}{目录} %将content转为目录
+    \tableofcontents
+
+    \begin{abstract}
+        该部分内容是放置摘要信息的。该部分内容是放置摘要信息的。该部分内容是放置摘要信息的。该部分内容是放置摘要信息的。该部分内容是放置摘要信息的。
+    \end{abstract}
+
+    西游记\footnote{中国古典四大名著之一}小说开头写道：
+    \begin{quote}
+    {\kaishu 东胜神洲有一花果山，山顶一石，受日月精华，生出一石猴。之后因为成功闯入水帘洞，被花果山诸猴拜为“美猴王”。}
+    \end{quote}
+
+
+    % 标题开始
+    \section{一级标题1}
+    第一段一级标题下的内容，一级标题下的内容，一级标题下的内容，一级标题下的内容，一级标题下的内容，一级标题下的内容，一级标题下的内容，一级标题下的内容。\par
+    第二段一级标题下的内容，一级标题下的内容，一级标题下的内容，一级标题下的内容，一级标题下的内容，一级标题下的内容，一级标题下的内容，一级标题下的内容。
+
+    \subsection{二级标题1.1}
+    二级标题下的内容。
+
+    \subsubsection{三级标题下的内容1.1.1}
+    三级标题下的内容。
+
+    \section{一级标题2}
+    一级标题2中的内容
+
+
+\end{document}

@@ -1,0 +1,84 @@
+\documentclass{article}
+\usepackage{ctex}
+
+\begin{document}
+    \section{简介}
+    \LaTeX{}将排版内容分为文本模式和数学模式，
+    文本模式用于普通文本排版，数学模式用于数学公式排版。
+    
+    \section{行内公式}
+    \subsection{美元符号}
+    交换律是$a+b=b+a$,如$1+2=2+1=3$。
+    \subsection{小括号}
+    交换律是\(a+b=b+a\),如\(1+2=2+1=3\)。
+    \begin{math}
+        a+b=b+a
+    \end{math},如
+    \begin{math}
+        1+2=2+1=3
+    \end{math}。
+    
+    \section{上下标}
+    \subsection{上标}
+    $3x^{55}+2x=16$
+
+    $3x^{3x^{20}-x+2}=3$
+    \subsection{下标}
+    $a_0,a_2$
+
+    $a_{100},a_{200}$
+    \section{希腊字母}
+    \begin{math}
+        \alpha
+        \beta
+        \gamma
+        \epsilon
+        \pi
+        \omega
+        \Gamma
+        \Delta
+        \Theta
+        \Pi
+        \Omega
+    \end{math}
+
+    \section{数学函数}
+    \begin{math}
+        \log
+        \sin
+        \cos
+        \arccos
+        \arcsin
+        \ln
+    \end{math}
+
+    $\sqrt[4]{x^2+5}$
+
+    $y=log_2 x$
+
+    \section{分式}
+    $3/4$
+    $\frac{3x}{x^3}$
+
+    \section{行间公式}
+    \subsection{美元符号}
+    $$a+b=b+a$$如$$a+2=2+1=3$$
+    \subsection{中括号}
+    \[a+b=b+a\]如\[1+2=2+1=3\]。
+    \subsection{displaymath环境}
+    \begin{displaymath}
+        a+b=b+a
+    \end{displaymath}
+    \subsection{自动编号公式equation环境}
+    交换律见\ref{eq:hongdeyao}
+    \begin{equation}
+        a+b=b+a  \label{eq:hongdeyao}
+    \end{equation}
+    \subsection{不编号公式}
+    %\begin{equation*}
+    %    a+b=b+a
+    %\end{equation*}
+
+
+    {\kaishu 详细版本请见链接https://blog.csdn.net/NSJim/article/details/109045914}
+\end{document}
